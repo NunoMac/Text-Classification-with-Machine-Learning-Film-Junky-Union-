@@ -1,0 +1,42 @@
+Project 14 - ML for Text - Film Junky Union
+
+A Film Junky Union, uma nova comunidade para entusiastas de filmes clássicos, está desenvolvendo um sistema para filtrar e categorizar resenhas de filmes.
+
+O OBJETIVO é treinar um modelo para detectar automaticamente resenhas negativas.
+
+conjunto de dados de resenhas de filmes do IMDB com rotulagem de polaridade
+
+criar um modelo para classificar resenhas como positivas e negativas
+
+F1 de pelo menos 0,85
+
+Instruções do Projeto
+Carregue os dados.
+Pré-processe os dados, se necessário.
+Conduza uma AED e tire sua conclusão sobre o desequilíbrio de classe.
+Pré-processe os dados para modelagem.
+Treine pelo menos três modelos diferentes para o conjunto de dados de treinamento fornecido.
+Teste os modelos para o conjunto de dados de teste fornecido.
+Escreva algumas resenhas você mesmo e classifique-as usando todos os modelos.
+Verifique as diferenças entre os resultados dos testes dos modelos nos dois pontos acima. Tente explicá-las.
+Apresente suas descobertas.
+
+
+
+lista de trechos de código:
+Um pouco de AED com alguns gráficos
+evaluate_model()
+	uma rotina para avaliar um modelo de classificação que está em conformidade com a interface de predição do scikit-learn
+BERT_text_to_embeddings()
+	uma rotina para converter uma lista de textos em incorporação com BERT
+
+sugerimos tentar modelos de classificação baseados em
+- regressão logística 
+- gradient boosting
+
+BERT geralmente precisa ser executado na GPU para um desempenho adequado.
+	sugerimos fazê-lo localmente e pegar apenas algumas centenas de objetos por cada parte do conjunto de dados (treinamento/teste) para evitar esperar muito.
+
+-> indicar o uso do BERT na primeira célula (o cabeçalho do seu projeto).
+
+
